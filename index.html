@@ -3,30 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Ivan Pavao Došilović">
-    <meta name="keywords" content="ivan, pavao, ivan pavao, ivan pavao dosilovic, ivan dosilovic, pavao dosilovic, dosilovic">
+    <meta name="description" content="My personal website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ivan, pavao, ivan pavao, ivan pavao dosilovic, ivan dosilovic, pavao dosilovic, dosilovic">
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     
     <title>Ivan Pavao Došilović</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a[title='CV'").click(function(){
+                $(".modal").fadeIn();
+            });
 
+            $(".close").click(function() {
+                $(".modal").fadeOut();
+            });
+        });
+    </script>
 </head>
 
 <body>
-        <img src="https://wallpaper.dosilovic.com" id="fullscreen">
-        <div class="box">
-                <img class="profile-picture" src="img/me.jpg" alt="Profile Picture">
-                <h1 class="header">Ivan Pavao Došilović</h1>
-                <p>Profession Electronic Mechanical Technician <br> Finished Elektrostrojarska obrtnička škola <br> Went to OŠ Špansko Oranice</p>
-
-                <div class="icons">
-                    <ul>
-                        <li><a href="https://www.facebook.com/ivanp.dosilovic" title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com/dosilovic" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#" title="CV" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1><i class="fa fa-globe" aria-hidden="true"></i> Choose Curriculum Vitae Language 
+                <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div></h1>
+            </div>
+            <div class="modal-body">
+                <h3>English <a href="docs/cv_croatian.pdf" download>Download</a></h3>
+                <img src="images/cv_english.jpg" width="80%" alt="Error English Curriculum Vitae">
+                <h3>Croatian  <a href="docs/cv_croatian.pdf" download>Download</a></h3>
+                <img src="images/cv_croatian.jpg" width="80%" alt="Error Croatian Curriculum Vitae">
+            </div>
         </div>
+    </div>
+
+    <img src="https://wallpaper.dosilovic.com" alt="background" id="fullscreen">
+    <div class="box">
+        <img class="profile-picture" src="images/me.jpg" alt="picture">
+        <h1 class="header">Ivan Pavao Došilović</h1>
+        <p>Profession Electronic Mechanical Technician <br> Finished Elektrostrojarska obrtnička škola <br> Went to OŠ Špansko Oranice</p>
+
+        <div class="icons">
+            <ul>
+                <li><a href="https://www.facebook.com/ivanp.dosilovic" title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/dosilovic" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/MrIvek" title="GitHub" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a title="CV"><i class="fa fa-file" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
