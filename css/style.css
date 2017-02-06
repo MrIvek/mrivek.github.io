@@ -12,12 +12,12 @@
 
 h1 {
     font-family:'Segoe UI';
-    font-weight:200;
+    font-weight: 200;
 }
 
 body {
     font-family:'Segoe UI';
-    font-weight:100;
+    font-weight: 100;
 }
 
 ul {
@@ -27,8 +27,8 @@ ul {
 
 
 .box {
-	width: 700px;
-	height: 540px;
+	width: 600px;
+	height: 600px;
 	background: rgba(0, 0, 0, 0.5);
 	padding: 35px;
 	margin: 0 auto;
