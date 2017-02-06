@@ -63,9 +63,8 @@
     text-decoration: none;
     width: auto;
     height: auto;
-    padding: 2px;
+    padding: 5px;
     transition: all 1s ease-in-out;
-    border-radius: 5%;
     float: right;
 }
 
