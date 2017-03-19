@@ -1,63 +1,47 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Ivan Pavao Došilović">
-    <meta name="description" content="My personal website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="ivan, pavao, ivan pavao, ivan pavao dosilovic, ivan dosilovic, pavao dosilovic, dosilovic">
-    <meta name="google-site-verification" content="N49LZqY6PBNS1WlQ3CnjSZH5U4rtMUrtjrpH7e12Rac" />
-    
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Ivan Pavao Došilović</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("a[title='CV'").click(function(){
-                $(".modal").fadeIn();
-            });
+    <head>
+        <title>Ivan Pavao Došilović</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Ivan Pavao Došilović">
+        <meta name="description" content="My personal website">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="keywords" content="ivan, pavao, ivan pavao, ivan pavao dosilovic, ivan dosilovic, pavao dosilovic, dosilovic">
+        <meta name="google-site-verification" content="N49LZqY6PBNS1WlQ3CnjSZH5U4rtMUrtjrpH7e12Rac" />
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/modal.css">
+        <link rel="stylesheet" type="text/css" href="css/animations.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 
-            $(".close").click(function() {
-                $(".modal").fadeOut();
-            });
-        });
-    </script>
-</head>
-
-<body>
-    <div class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1><i class="fa fa-globe" aria-hidden="true"></i> Choose Curriculum Vitae Language 
-                <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div></h1>
+    <body>
+        <div class="container" style="background-image: url('images/background.jpg'); background-size: cover;">
+            <div class="name">Ivan Pavao Došilović</div>
+            <div class="box">
+                <a href="https://www.facebook.com/ivanp.dosilovic" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <div class="box-name">Facebook</div>
             </div>
-            <div class="modal-body">
-                    <h3>English<a href="docs/cv_english.pdf" download><i class="fa fa-download" aria-hidden="true"></i> Download</a></h3>
-                    <img src="images/cv_english.jpg" width="99%" alt="Error can't load English Curriculum Vitae">
-                    <h3>Croatian<a href="docs/cv_croatian.pdf" download><i class="fa fa-download" aria-hidden="true"></i> Download</a></h3>
-                    <img src="images/cv_croatian.jpg" width="99%" alt="Error can't load Croatian Curriculum Vitae">
+
+            <div class="box">
+                <a href="https://www.instagram.com/dosilovic/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <div class="box-name">Instagram</div>
+            </div>
+            
+            <div class="box">
+                <a href="https://github.com/MrIvek" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <div class="box-name">GitHub</div>
+            </div>
+            
+            <div class="box">
+                <a href="https://www.freecodecamp.com/mrivek" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+                <div class="box-name">FreeCodeCamp</div>
+            </div>
+            
+            <div class="box">
+                <a href="http://codepen.io/MrIvek/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+                <div class="box-name">CodePen</div>
             </div>
         </div>
-    </div>
-    
-    <img src="https://wallpaper.dosilovic.com" alt="background" id="fullscreen">
-    <div class="box">
-        <img class="profile-picture" src="images/me.jpg" alt="picture">
-        <h1 class="header">Ivan Pavao Došilović</h1>
-        <p>Profession Electronic Mechanical Technician <br> Finished Elektrostrojarska obrtnička škola <br> Went to ELEM Špansko Oranice</p>
-
-        <div class="icons">
-            <ul>
-                <li><a href="https://www.facebook.com/ivanp.dosilovic" title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.instagram.com/dosilovic" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/MrIvek" title="GitHub" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.freecodecamp.com/mrivek" title="FreeCodeCamp" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
-                <li><a href="http://codepen.io/MrIvek/" title="CodePen" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-                <li><a title="CV"><i class="fa fa-file" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
