@@ -3,8 +3,6 @@ $alpha: 0.3
 
 .box
   position: relative
-  top: 50px
-  left: 0px
   color: white
   width: 50px
   height: 50px
@@ -12,11 +10,13 @@ $alpha: 0.3
   background: rgba($color, $alpha)
   text-align: center
   border: 1px solid black
-  margin: 0px 0px 5px 5px
+  margin: 10px auto
   padding: 0px
 
   &:hover
-    .box-name
+    .box-open-right
+      transform: rotateY(0deg)
+    .box-open-left
       transform: rotateY(0deg)
     i
       transform: scale(1.2)
@@ -31,12 +31,12 @@ $alpha: 0.3
       padding: 13px 0px
       transition: all 500ms cubic-bezier(0.13, 0.43, 0.54, 1.82)
   
-  .box-name
+  .box-open-right
     position: absolute
-    width: 130px
-    height: 49px
     top: 0px
     left: 50px
+    width: 120px
+    height: 49px
     color: white
     border-radius: 0px 10px 10px 0px
     border: 1px solid black
@@ -49,11 +49,27 @@ $alpha: 0.3
     background: rgba($color, $alpha)
     font-family: "Comic Sans MS", cursive, sans-serif
 
-@media (max-width: 415px)
-  .box
-    display: block
-    top: 250px
-    left: 72px
+  .box-open-left
+    position: absolute
+    top: 0px
+    left: -120px
+    width: 120px
+    height: 49px
+    color: white
+    border-radius: 10px 0px 0px 10px
+    border: 1px solid black
+    box-sizing: border-box
+    transform: rotateY(180deg)
+    backface-visibility: hidden
+    transform-style: preserve-3d
+    transform-origin: 100% 0%
+    transition: transform 900ms ease
+    background: rgba($color, $alpha)
+    font-family: "Comic Sans MS", cursive, sans-serif
 
-    .box-name
+@media (max-width: 712px)
+  .box
+    .box-open-right
+      transform: rotateY(0deg)
+    .box-open-left
       transform: rotateY(0deg)
