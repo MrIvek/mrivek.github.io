@@ -32,14 +32,14 @@ a {
   padding: 0px;
   opacity: 1; }
 
-img {
-  margin: 0px auto;
-  padding: 10px 20px; }
-
 .avatar {
   text-align: center;
   border-radius: 50%;
   display: block; }
+
+img {
+  margin: 0px auto;
+  padding: 10px 20px; }
 
 .icon-1 {
   opacity: 1;
@@ -55,6 +55,16 @@ img {
   opacity: 1;
   -webkit-transition: opacity 1800ms ease;
   transition: opacity 1800ms ease; }
+
+.icon-4 {
+  opacity: 1;
+  -webkit-transition: opacity 2400ms ease;
+  transition: opacity 2400ms ease; }
+
+.icon-5 {
+  opacity: 1;
+  -webkit-transition: opacity 3000ms ease;
+  transition: opacity 3000ms ease; }
 
 ul {
   list-style-type: none;

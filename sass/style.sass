@@ -32,16 +32,16 @@ a
   padding: 0px
   opacity: 1
 
-img
-  margin: 0px auto
-  padding: 10px 20px
-
 .avatar
   text-align: center
   border-radius: 50%
   display: block
 
-@for $i from 1 through 3
+img
+  margin: 0px auto
+  padding: 10px 20px
+
+@for $i from 1 through 5
   .icon-#{$i}
     opacity: 1
     transition: opacity 600ms * $i ease
@@ -68,5 +68,3 @@ ul
       i
         padding: 0px
         margin: 0px
-
-@media (max-width: 1024px)
