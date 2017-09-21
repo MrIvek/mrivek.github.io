@@ -41,13 +41,10 @@ img
   border-radius: 50%
   display: block
 
-.monitor
-  text-align: center
-
 @for $i from 1 through 3
   .icon-#{$i}
     opacity: 1
-    transition: opacity 600ms * $i ease-in-out
+    transition: opacity 600ms * $i ease
   
 ul
   list-style-type: none

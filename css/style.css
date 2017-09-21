@@ -41,23 +41,20 @@ img {
   border-radius: 50%;
   display: block; }
 
-.monitor {
-  text-align: center; }
-
 .icon-1 {
   opacity: 1;
-  -webkit-transition: opacity 600ms ease-in-out;
-  transition: opacity 600ms ease-in-out; }
+  -webkit-transition: opacity 600ms ease;
+  transition: opacity 600ms ease; }
 
 .icon-2 {
   opacity: 1;
-  -webkit-transition: opacity 1200ms ease-in-out;
-  transition: opacity 1200ms ease-in-out; }
+  -webkit-transition: opacity 1200ms ease;
+  transition: opacity 1200ms ease; }
 
 .icon-3 {
   opacity: 1;
-  -webkit-transition: opacity 1800ms ease-in-out;
-  transition: opacity 1800ms ease-in-out; }
+  -webkit-transition: opacity 1800ms ease;
+  transition: opacity 1800ms ease; }
 
 ul {
   list-style-type: none;
