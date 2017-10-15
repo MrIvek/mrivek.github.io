@@ -13,6 +13,13 @@ a {
   text-decoration: none;
   color: inherit; }
 
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  height: 80%; }
+
 .container {
   width: 100%; }
 
