@@ -10,14 +10,11 @@
   margin: 10px auto;
   padding: 0px; }
   .box:hover .box-open-right {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg); }
+    transform: rotateY(0deg); }
   .box:hover .box-open-left {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg); }
+    transform: rotateY(0deg); }
   .box:hover i {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
+    transform: scale(1.2); }
   .box > a {
     text-decoration: none;
     color: white; }
@@ -25,7 +22,6 @@
       width: 100%;
       font-size: 1.5em;
       padding: 13px 0px;
-      -webkit-transition: all 500ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
       transition: all 500ms cubic-bezier(0.13, 0.43, 0.54, 1.82); }
   .box .box-open-right {
     position: absolute;
@@ -36,20 +32,12 @@
     color: white;
     border-radius: 0px 10px 10px 0px;
     border: 1px solid black;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
-    -webkit-transition: -webkit-transform 900ms ease;
-    transition: -webkit-transform 900ms ease;
+    box-sizing: border-box;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform-origin: 0% 50%;
     transition: transform 900ms ease;
-    transition: transform 900ms ease, -webkit-transform 900ms ease;
     background: rgba(0, 0, 0, 0.3);
     font-family: "Comic Sans MS", cursive, sans-serif; }
   .box .box-open-left {
@@ -61,27 +49,17 @@
     color: white;
     border-radius: 10px 0px 0px 10px;
     border: 1px solid black;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
-    -webkit-transition: -webkit-transform 900ms ease;
-    transition: -webkit-transform 900ms ease;
+    box-sizing: border-box;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform-origin: 100% 0%;
     transition: transform 900ms ease;
-    transition: transform 900ms ease, -webkit-transform 900ms ease;
     background: rgba(0, 0, 0, 0.3);
     font-family: "Comic Sans MS", cursive, sans-serif; }
 
 @media (max-width: 712px) {
   .box .box-open-right {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg); }
+    transform: rotateY(0deg); }
   .box .box-open-left {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg); } }
+    transform: rotateY(0deg); } }
