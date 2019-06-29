@@ -103,5 +103,11 @@ var canvasDots = function() {
 };
 
 window.onload = function() {
-  canvasDots();
+  $('.overlay').hide();
+  $('.loading').show();
+  setTimeout(function() {
+    $('.loading').hide();
+    canvasDots();
+    $('.overlay').show();
+  }, 3000);
 };
