@@ -23,12 +23,39 @@ canvas
     bottom: 0
     right: 0
     left: 0
-    background-color: azure
+    background-color: smokewhite
     position: absolute
     
-a
+a.link
   text-decoration: none
-  color: inherit
+  color: #0072b5
+  position: relative
+  box-sizing: border-box
+  transition: all 900ms ease
+  font-weight: bolder
+
+  &::before
+    content: ""
+    position: absolute
+    color: inherit
+    background-color: #0072b5
+    height: 100%
+    left: 0px
+    right: 0px
+    bottom: 0px
+    width: 0%
+    margin: 0px
+    z-index: -1
+    transition: all 600ms ease
+
+  &:hover
+    color: white
+    transition: all 900ms ease
+
+  &:hover::before
+    width: 100%
+    padding: 0px 2px
+
 
 .background
   position: absolute
@@ -42,6 +69,7 @@ a
   transform: translate(-50%, -50%)
   top: 50%
   left: 50%
+  box-sizing: border-box
 
 .name
   color: black
@@ -49,9 +77,17 @@ a
   margin: 0px
   padding: 0px
   opacity: 1
+  text-align: center
+
+.description
+  color: inherit
+  font-weight: normal
+  margin: 0px
+  padding: 0px
+  opacity: 1
 
 .quote
-  color: darkgray
+  color: #D2386C
   font-weight: normal
   margin: 0px
   padding: 0px
@@ -63,18 +99,8 @@ a
   display: block
 
 img
-  padding: 20px 20px 0px 20px
-  float: right
-
-.left
-  position: relative
-  display: inline-block
-  width: 49%
-
-.right
-  position: relative
-  width: 49%
-  display: inline-block
+  padding: 20px
+  margin: 0px auto
 
 #icons
   transform-origin: center center
